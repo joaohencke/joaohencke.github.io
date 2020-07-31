@@ -6,6 +6,7 @@
   "homepage": "https://joaohencke.github.io",
   "license": "MIT",
   "scripts": {
+    "start": "lerna run start",
     "predeploy": "lerna run build",
     "deploy": "gh-pages -d packages/client/build"
   },
