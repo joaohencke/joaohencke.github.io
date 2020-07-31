@@ -1,16 +1,15 @@
 import React from 'react';
-import Progress from 'ui/Progress';
 import Card from 'ui/Card';
 
-const skill = (name, time) => ({ name, time });
+const skill = (name, time, tip) => ({ name, time, tip });
 
 const skills = [
-  skill('JavaScript', 4.5),
-  skill('ReactJS', 4),
-  skill('NodeJS', 4),
-  skill('React Native', 3.5),
-  skill('AngularJS', 3),
-  skill('Java', 3),
+  skill('JavaScript', 5, 'ReactJS, React Native, VueJS, NodeJS'),
+  skill('Java', 5, 'Spring, Struts'),
+  skill('SQL', 5, 'PLSQL, TSQL, PSQL'),
+  skill('NoSQL', 5, 'Google Datastore, MongoDB, Firebase'),
+  skill('GraphQL', 1, 'Apollo'),
+  skill('Docker', 1),
 ];
 
 export default function Skills() {
@@ -18,14 +17,19 @@ export default function Skills() {
     <Card dark style={{ height: '100%' }}>
       <Card.Body>
         <Card.Title>Skills</Card.Title>
-        {skills.map(({ name, time }) => (
-          <div key={name} style={{ margin: 2 }}>
-            {name}
-            <Progress>
-              <Progress.Bar style={{ width: `${(time * 100) / 5.0}%` }} />
-            </Progress>
-          </div>
-        ))}
+        <p>Since 2011 working with development, I was able to work with:</p>
+        <ul className="list-group">
+          {skills.map(({ name, time, tip }) => (
+            <li key={name} className="list-group-item bg-dark d-flex justify-content-between align-items-center">
+              <span>
+                {name}
+                &nbsp;
+                {tip && <small>({tip})</small> /* eslint-disable-line */} 
+              </span>
+              <span className="badge badge-primary badge-pill">{`${time}+ years`}</span>
+            </li>
+          ))}
+        </ul>
       </Card.Body>
     </Card>
   );

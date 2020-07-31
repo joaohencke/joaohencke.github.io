@@ -1,5 +1,7 @@
+$theme-colors: (
+  'primary': #DAA520,  
+);
 @import '../../../node_modules/bootstrap';
-
 body {
   font-size: 1rem;
   font-family: monospace, 'Montserrat', sans-serif;

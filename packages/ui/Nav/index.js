@@ -7,7 +7,7 @@ const nav = styled.nav.attrs((props) => ({
     'navbar-light bg-light': props.light,
   }),
 }))`
-  color: #fad700;
+  color: #daa520;
 `;
 
 export default nav;
