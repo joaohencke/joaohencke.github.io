@@ -1,0 +1,12 @@
+@import '../../../node_modules/bootstrap';
+
+body {
+  font-size: 1rem;
+  font-family: monospace, 'Montserrat', sans-serif;
+  max-height: 100vh;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #222;
+  color: color-yiq(theme-color("dark"));
+}

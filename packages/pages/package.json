@@ -1,0 +1,12 @@
+{
+  "name": "pages",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "ui": "*",
+    "components": "*",
+    "react": "^16.13.1"
+  }
+}
