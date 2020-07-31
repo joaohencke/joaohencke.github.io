@@ -3,7 +3,7 @@ import 'popper.js';
 import 'bootstrap';
 import React from 'react';
 import { renderRoutes } from 'react-router-config';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 import { Root } from 'components';
 import pages from 'pages';
@@ -17,9 +17,9 @@ const routes = [{
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       {renderRoutes(routes)}
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
