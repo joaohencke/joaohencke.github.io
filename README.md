@@ -18,4 +18,4 @@ This project is a `monorepo`, using `react` with `javascript`.
 * `yarn deploy` at root folder.
   * it will build the project at `./packages/client/build` then will push it to branch `gh-pages`.
 
-Any question, feel free to open a issue ♡
+Any question, feel free to open an issue ♡
