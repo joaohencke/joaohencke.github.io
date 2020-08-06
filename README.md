@@ -1,7 +1,5 @@
 # joaohencke.github.io
 
-A page to describe myself and my personal skills. 
-
 If it fit to you, feel free to use as you want.
 
 ## About
